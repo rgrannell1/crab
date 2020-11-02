@@ -5,6 +5,10 @@ import {
   encode
 } from './encode.js'
 
+import {
+  run
+} from './run.js'
+
 const docs = `
 Usage:
   crab encode <fpath>
@@ -17,7 +21,7 @@ Description:
 const args = docopt.docopt(docs, {})
 
 if (args.run) {
-
+  run(args['<fpath>'])
 } else {
   encode(args['<fpath>'])
 }

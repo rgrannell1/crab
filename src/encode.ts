@@ -2,18 +2,19 @@
 import _ from 'lodash'
 import * as fs from 'fs'
 
-export const encode = (fpath:string) => {
-  const content = fs.readFileSync(fpath).toString()
-
-  let binary = _([...content])
+const asciiToCrab = (content:string) => {
+  return _([...content])
     .map(char => {
       const charCode = char.charCodeAt(0)
-      const byte = charCode.toString(2).padStart(8, '0')
-
-      return byte
+      return '🦀'.repeat(charCode)
     })
-    .join('')
+    .join('\n')
+    .valueOf()
+}
 
-  const castSize = parseInt(binary, 2)
-  console.log(castSize)
+export const encode = (fpath:string) => {
+  const content = fs.readFileSync(fpath).toString()
+  const output = asciiToCrab(content)
+
+  console.log(output)
 }
