@@ -1,0 +1,25 @@
+{
+  "name": "ts-template",
+  "version": "1.0.0",
+  "description": "",,
+  "author": "Róisín Grannell <r.grannell2@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "app": "dist/src/cli/app.ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "standard": "13.1.0",
+    "standardx": "^5.0.0",
+    "typedoc": "^0.19.2"
+  },
+  "dependencies": {
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}

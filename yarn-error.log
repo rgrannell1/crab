@@ -1,0 +1,44 @@
+Arguments: 
+  /home/rg/.nvm/versions/node/v15.0.1/bin/node /home/rg/.nvm/versions/node/v15.0.1/bin/yarn add typescript
+
+PATH: 
+  /home/rg/.nvm/versions/node/v15.0.1/bin:/home/rg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/rg/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/home/rg/.antigen/bundles/romkatv/powerlevel10k:/home/rg/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git:/home/rg/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip:/home/rg/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/sudo:/home/rg/.antigen/bundles/lukechilds/zsh-nvm:/home/rg/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:/home/rg/.antigen/bundles/zsh-users/zsh-syntax-highlighting:/home/rg/.antigen/bundles/zsh-users/zsh-autosuggestions:/home/rg/.fzf/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.0.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/rg/Code/ts-template/package.json: Unexpected token , in JSON at position 69
+      at JSON.parse (<anonymous>)
+      at /home/rg/.nvm/versions/node/v15.0.1/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/rg/.nvm/versions/node/v15.0.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/rg/.nvm/versions/node/v15.0.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "ts-template",
+    "version": "1.0.0",
+    "description": "",,
+    "author": "Róisín Grannell <r.grannell2@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+      "tsc": "tsc"
+    },
+    "preferGlobal": true,
+    "bin": {
+      "app": "dist/src/cli/app.ts"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
