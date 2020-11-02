@@ -1,5 +1,5 @@
 Arguments: 
-  /home/rg/.nvm/versions/node/v15.0.1/bin/node /home/rg/.nvm/versions/node/v15.0.1/bin/yarn add typescript
+  /home/rg/.nvm/versions/node/v15.0.1/bin/node /home/rg/.nvm/versions/node/v15.0.1/bin/yarn
 
 PATH: 
   /home/rg/.nvm/versions/node/v15.0.1/bin:/home/rg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/rg/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/home/rg/.antigen/bundles/romkatv/powerlevel10k:/home/rg/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git:/home/rg/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip:/home/rg/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/sudo:/home/rg/.antigen/bundles/lukechilds/zsh-nvm:/home/rg/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:/home/rg/.antigen/bundles/zsh-users/zsh-syntax-highlighting:/home/rg/.antigen/bundles/zsh-users/zsh-autosuggestions:/home/rg/.fzf/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/rg/Code/ts-template/package.json: Unexpected token , in JSON at position 69
+  SyntaxError: /home/rg/Code/crab/package.json: Unexpected token , in JSON at position 69
       at JSON.parse (<anonymous>)
       at /home/rg/.nvm/versions/node/v15.0.1/lib/node_modules/yarn/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -34,6 +34,17 @@ npm manifest:
     "preferGlobal": true,
     "bin": {
       "app": "dist/src/cli/app.ts"
+    },
+    "devDependencies": {
+      "@typescript-eslint/eslint-plugin": "^4.5.0",
+      "@typescript-eslint/parser": "^4.5.0",
+      "standard": "13.1.0",
+      "standardx": "^5.0.0",
+      "typedoc": "^0.19.2"
+    },
+    "dependencies": {
+      "tslint-config-standard": "^9.0.0",
+      "typescript": "^4.0.3"
     }
   }
 
