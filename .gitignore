@@ -3,3 +3,9 @@ node_modules/
 yarn-error.log
 language.crab
 test.txt
+flamegraph.html
+isolate*
+*.map
+*.snap
+.nyc*
+.nyc_output

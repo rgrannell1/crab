@@ -4,7 +4,7 @@ import _ from 'lodash'
 import {
   JordanPetersonException,
   CarcinisationException
-} from './errors'
+} from './errors.js'
 
 const jsToCrab = (content: string) => {
   return _([...content])
