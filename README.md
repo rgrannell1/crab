@@ -3,7 +3,7 @@
 
 ![CI](https://github.com/rgrannell1/crab/workflows/CI/badge.svg)
 
-Carcinisation but for programming languages. In the future all people and things shall converge upon the crab, as teleology dictates. In the imperfect present, we shall merely rewrite our websites in crab.
+{Carcinisation](https://en.wikipedia.org/wiki/Carcinisation) but for programming languages. In the future all people and things shall converge upon the crab, as teleology dictates. In the imperfect present, we shall merely rewrite our websites in crab.
 
 ## Usage
 
