@@ -24,6 +24,10 @@ Carcinisation but for programming languages. In the future all people and things
 crab run hello-world.crab
 ```
 
+## Implementation
+
+Crab reads line-delimited unary crab-sequences as unicode code-points, and runs this as JS.
+
 ## License
 
 The MIT License
